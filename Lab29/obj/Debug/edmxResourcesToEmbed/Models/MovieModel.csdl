@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MovieDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="MovieDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Movies" EntityType="MovieDBModel.Movy" />
+  </EntityContainer>
+  <EntityType Name="Movy">
+    <Key>
+      <PropertyRef Name="movieName" />
+    </Key>
+    <Property Name="movieName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="movieCategory" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>
